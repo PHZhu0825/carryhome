@@ -1,0 +1,619 @@
+<!DOCTYPE html>  
+<html lang="zh-Hant">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Carry home 選品大調查   
+![72.png](Attachments/49AB249F-044D-448F-986A-D980BC3A5F7A.png)  
+	更簡潔的新版工具列  
+現在可以更輕鬆地完成常見工作。點按「更多」圖示 (⋮) 即可查看其他動作  
+  
+  
+第 1 個，共 4,678 個  
+  
+  
+  
+  
+  
+(無主旨)  
+收件匣  
+  
+  
+![ACg8ocKYksTtZP15w4nLVSHLjFZMjYpY5zDv0uBsKf09LoUspNN_BaiC=s80-p.png](Attachments/6FFBC136-FC2F-4F73-9C6B-943201EEAA50.png)  
+朱Pun <qwe505912@gmail.com>  
+  
+  
+下午8:58 (3 分鐘前)  
+  
+  
+  
+  
+  
+寄給 我  
+![cleardot.gif](Attachments/BAB61881-FC04-425F-8885-1A9BFA08DEDB.gif)  
+  
+  
+  
+  
+  
+<!DOCTYPE html>  
+<html lang="zh-Hant">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Carry home 選品大調查   
+![72.png](Attachments/B86ABA2D-3E9F-49ED-AA07-5910223FC69E.png)  
+</title>  
+<style>  
+:root {  
+/* 暖綠色系配色 */  
+--bg-color: #f1f8e9; /* 極淡的暖綠背景 */  
+--accent-green: #aed581; /* 酪梨綠，用於按鈕 */  
+--hover-green: #9ccc65; /* hover 時的深綠 */  
+--paper-color: #ffffff; /* 問卷主體白色 */  
+--text-black-bold: #000000; /* 黑色粗體 */  
+--text-black-light: #333333; /* 黑色細體 */  
+--border-color: #e0e0e0;   
+}  
+  
+body {  
+font-family: "PingFang TC", "Hiragino Sans GB", "Microsoft JhengHei", sans-serif;  
+background-color: var(--bg-color);  
+color: var(--text-black-light);  
+margin: 0;  
+padding: 20px;  
+display: flex;  
+justify-content: center;  
+-webkit-font-smoothing: antialiased;  
+}  
+  
+.container {  
+max-width: 500px;  
+width: 100%;  
+background: var(--paper-color);  
+padding: 40px 30px;  
+border-radius: 30px; /* 超圓潤邊框 */  
+box-shadow: 0 10px 25px rgba(174, 213, 129, 0.2); /* 帶點綠色的柔和陰影 */  
+position: relative;  
+overflow: hidden;  
+}  
+  
+/* 可愛風小裝飾 */  
+.container::before {  
+content: '  
+![72.png](Attachments/494BB955-DD26-406D-ADEA-62202DB712BA.png)  
+';  
+position: absolute;  
+top: -15px;  
+right: -15px;  
+font-size: 3rem;  
+opacity: 0.1;  
+transform: rotate(15deg);  
+}  
+  
+header {  
+text-align: center;  
+margin-bottom: 35px;  
+}  
+  
+h1 {  
+font-size: 1.6rem;  
+color: var(--text-black-bold);  
+font-weight: 900; /* 黑色粗體 */  
+margin-bottom: 15px;  
+letter-spacing: 1px;  
+}  
+  
+.intro {  
+font-size: 0.95rem;  
+line-height: 1.7;  
+color: var(--text-black-light);  
+font-weight: 300; /* 細體 */  
+background: #f9fdf9;  
+padding: 15px;  
+border-radius: 15px;  
+border: 1px dashed var(--accent-green);  
+}  
+  
+.question-group {  
+margin-bottom: 30px;  
+}  
+  
+label.question-title {  
+display: block;  
+font-weight: 700; /* 粗體 */  
+color: var(--text-black-bold);  
+margin-bottom: 15px;  
+font-size: 1.1rem;  
+}  
+  
+.hint {  
+font-size: 0.85rem;  
+color: #888;  
+font-weight: 300; /* 細體 */  
+display: block;  
+margin-top: -10px;  
+margin-bottom: 15px;  
+padding-left: 5px;  
+}  
+  
+.options {  
+display: flex;  
+flex-direction: column;  
+gap: 12px;  
+}  
+  
+/* 自定義可愛風選項 */  
+.option-item {  
+display: flex;  
+align-items: center;  
+padding: 15px 20px;  
+background: #fff;  
+border: 2px solid #f0f0f0;  
+border-radius: 20px; /* 圓潤 options */  
+cursor: pointer;  
+transition: all 0.2s ease;  
+font-weight: 300; /* 回答文字為細體 */  
+color: var(--text-black-light);  
+}  
+  
+.option-item:hover {  
+border-color: var(--accent-green);  
+background-color: #fdfdfd;  
+}  
+  
+/* 隱藏原生 input */  
+.option-item input {  
+position: absolute;  
+opacity: 0;  
+cursor: pointer;  
+height: 0;  
+width: 0;  
+}  
+  
+/* 自定義 checkmark (圓形，帶有可愛感) */  
+.checkmark {  
+height: 20px;  
+width: 20px;  
+background-color: #eee;  
+border-radius: 50%; /* 圓形 */  
+margin-right: 15px;  
+position: relative;  
+transition: all 0.2s ease;  
+border: 2px solid #e0e0e0;  
+}  
+  
+/* 選中時的樣式 */  
+.option-item input:checked ~ .checkmark {  
+background-color: var(--accent-green);  
+border-color: var(--accent-green);  
+transform: scale(1.1);  
+}  
+  
+/* Checkmark 內部的點 (像個小腳印) */  
+.checkmark::after {  
+content: "";  
+position: absolute;  
+display: none;  
+}  
+  
+.option-item input:checked ~ .checkmark::after {  
+display: block;  
+}  
+  
+.option-item .checkmark::after {  
+left: 6px;  
+top: 6px;  
+width: 8px;  
+height: 8px;  
+border-radius: 50%;  
+background: white;  
+}  
+  
+/* 輸入框樣式 */  
+input[type="text"] {  
+width: 100%;  
+padding: 15px 20px;  
+border: 2px solid #f0f0f0;  
+border-radius: 20px;  
+box-sizing: border-box;  
+font-size: 1rem;  
+font-weight: 300;  
+transition: 0.2s;  
+color: var(--text-black-light);  
+}  
+  
+input[type="text"]:focus {  
+outline: none;  
+border-color: var(--accent-green);  
+background-color: #fdfdfd;  
+}  
+  
+/* 提交按鈕 */  
+button {  
+width: 100%;  
+padding: 18px;  
+background-color: var(--accent-green);  
+color: white;  
+border: none;  
+border-radius: 30px;  
+font-size: 1.2rem;  
+font-weight: 700;  
+cursor: pointer;  
+transition: all 0.3s ease;  
+margin-top: 25px;  
+box-shadow: 0 5px 15px rgba(174, 213, 129, 0.4);  
+letter-spacing: 2px;  
+}  
+  
+button:hover {  
+background-color: var(--hover-green);  
+transform: translateY(-3px);  
+box-shadow: 0 8px 20px rgba(174, 213, 129, 0.5);  
+}  
+  
+footer {  
+text-align: center;  
+margin-top: 40px;  
+font-size: 0.85rem;  
+color: #bbb;  
+font-weight: 300;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<div class="container">  
+<header>  
+<h1>Carry home 選品大調查   
+![72.png](Attachments/C43C8150-CA69-4829-8638-284B2A501EA9.png)  
+</h1>  
+<p class="intro">謝謝你支持 Carry home！  
+![72.png](Attachments/18770036-75B0-4C04-B803-C5D260C4F361.png)  
+<br>我們想更了解你的喜好，讓你最愛的小東西都能輕鬆帶回家。</p>  
+</header>  
+  
+<form action="++[https://formspree.io/f/mqakezql](https://formspree.io/f/mqakezql)++" method="POST" id="surveyForm">  
+  
+<div class="question-group">  
+<label class="question-title">1-1. 平時最常關注的主題類別？</label>  
+<span class="hint">(多選，最多選3個)</span>  
+<div class="options">  
+<label class="option-item"><input type="checkbox" name="主題類別" value="玩具總動員"><span class="checkmark"></span>玩具總動員</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="湯姆貓與傑利鼠"><span class="checkmark"></span>湯姆貓與傑利鼠</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="史努比"><span class="checkmark"></span>史努比</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="麵包超人"><span class="checkmark"></span>麵包超人</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="蠟筆小新"><span class="checkmark"></span>蠟筆小新</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="海綿寶寶"><span class="checkmark"></span>海綿寶寶</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="小小兵"><span class="checkmark"></span>小小兵</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="其他"><span class="checkmark"></span>其他</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">1-2. 通常吸引你下單的原因？</label>  
+<span class="hint">(多選，最多選2個)</span>  
+<div class="options">  
+<label class="option-item"><input type="checkbox" name="下單原因" value="視覺好看"><span class="checkmark"></span>視覺好看</label>  
+<label class="option-item"><input type="checkbox" name="下單原因" value="實用性高"><span class="checkmark"></span>實用性高</label>  
+<label class="option-item"><input type="checkbox" name="下單原因" value="價格親民"><span class="checkmark"></span>價格親民</label>  
+<label class="option-item"><input type="checkbox" name="下單原因" value="台灣買不到"><span class="checkmark"></span>台灣買不到</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">2-1. 你最偏好的風格？</label>  
+<div class="options">  
+<label class="option-item"><input type="radio" name="偏好風格" value="生活實用型" required><span class="checkmark"></span>生活實用型</label>  
+<label class="option-item"><input type="radio" name="偏好風格" value="擺飾可愛型"><span class="checkmark"></span>擺飾可愛型</label>  
+<label class="option-item"><input type="radio" name="偏好風格" value="其他"><span class="checkmark"></span>其他</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">2-2. 最近想找什麼樣的商品？</label>  
+<input type="text" name="許願商品" placeholder="例如：手機殼、收納盒...">  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">3. 對於「Carry home 小物」的預算範圍？</label>  
+<div class="options">  
+<label class="option-item"><input type="radio" name="預算範圍" value="100-300" required><span class="checkmark"></span>100-300</label>  
+<label class="option-item"><input type="radio" name="預算範圍" value="300-600"><span class="checkmark"></span>300-600</label>  
+<label class="option-item"><input type="radio" name="預算範圍" value="600-1000"><span class="checkmark"></span>600-1000</label>  
+<label class="option-item"><input type="radio" name="預算範圍" value="1000以上"><span class="checkmark"></span>1000以上</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">4. 是否希望在限動舉辦「二選一」投票？</label>  
+<div class="options">  
+<  
+  
+	  
+</title>  
+<style>  
+:root {  
+/* 暖綠色系配色 */  
+--bg-color: #f1f8e9; /* 極淡的暖綠背景 */  
+--accent-green: #aed581; /* 酪梨綠，用於按鈕 */  
+--hover-green: #9ccc65; /* hover 時的深綠 */  
+--paper-color: #ffffff; /* 問卷主體白色 */  
+--text-black-bold: #000000; /* 黑色粗體 */  
+--text-black-light: #333333; /* 黑色細體 *  
+--border-color: #e0e0e0;   
+}  
+  
+body {  
+font-family: "PingFang TC", "Hiragino Sans GB", "Microsoft JhengHei", sans-serif;  
+background-color: var(--bg-color);  
+color: var(--text-black-light);  
+margin: 0;  
+padding: 20px;  
+display: flex;  
+justify-content: center;  
+-webkit-font-smoothing: antialiased;  
+}  
+  
+.container {  
+max-width: 500px;  
+width: 100%;  
+background: var(--paper-color);  
+padding: 40px 30px;  
+border-radius: 30px; /* 超圓潤邊框 */  
+box-shadow: 0 10px 25px rgba(174, 213, 129, 0.2); /* 帶點綠色的柔和陰影 */  
+position: relative;  
+overflow: hidden;  
+}  
+  
+/* 可愛風小裝飾 */  
+.container::before {  
+content: '  
+![72.png](Attachments/E43882DD-F0C5-4170-A4A0-5F6A175579A8.png)  
+';  
+position: absolute;  
+top: -15px;  
+right: -15px;  
+font-size: 3rem;  
+opacity: 0.1;  
+transform: rotate(15deg);  
+}  
+  
+header {  
+text-align: center;  
+margin-bottom: 35px;  
+}  
+  
+h1 {  
+font-size: 1.6rem;  
+color: var(--text-black-bold);  
+font-weight: 900; /* 黑色粗體 */  
+margin-bottom: 15px;  
+letter-spacing: 1px;  
+}  
+  
+.intro {  
+font-size: 0.95rem;  
+line-height: 1.7;  
+color: var(--text-black-light);  
+font-weight: 300; /* 細體 */  
+background: #f9fdf9;  
+padding: 15px;  
+border-radius: 15px;  
+border: 1px dashed var(--accent-green);  
+}  
+  
+.question-group {  
+margin-bottom: 30px;  
+}  
+  
+label.question-title {  
+display: block;  
+font-weight: 700; /* 粗體 */  
+color: var(--text-black-bold);  
+margin-bottom: 15px;  
+font-size: 1.1rem;  
+}  
+  
+.hint {  
+font-size: 0.85rem;  
+color: #888;  
+font-weight: 300; /* 細體 */  
+display: block;  
+margin-top: -10px;  
+margin-bottom: 15px;  
+padding-left: 5px;  
+}  
+  
+.options {  
+display: flex;  
+flex-direction: column;  
+gap: 12px;  
+}  
+  
+/* 自定義可愛風選項 */  
+.option-item {  
+display: flex;  
+align-items: center;  
+padding: 15px 20px;  
+background: #fff;  
+border: 2px solid #f0f0f0;  
+border-radius: 20px; /* 圓潤 options */  
+cursor: pointer;  
+transition: all 0.2s ease;  
+font-weight: 300; /* 回答文字為細體 */  
+color: var(--text-black-light);  
+}  
+  
+.option-item:hover {  
+border-color: var(--accent-green);  
+background-color: #fdfdfd;  
+}  
+  
+/* 隱藏原生 input */  
+.option-item input {  
+position: absolute;  
+opacity: 0;  
+cursor: pointer;  
+height: 0;  
+width: 0;  
+}  
+  
+/* 自定義 checkmark (圓形，帶有可愛感) */  
+.checkmark {  
+height: 20px;  
+width: 20px;  
+background-color: #eee;  
+border-radius: 50%; /* 圓形 */  
+margin-right: 15px;  
+position: relative;  
+transition: all 0.2s ease;  
+border: 2px solid #e0e0e0;  
+}  
+  
+/* 選中時的樣式 */  
+.option-item input:checked ~ .checkmark {  
+background-color: var(--accent-green);  
+border-color: var(--accent-green);  
+transform: scale(1.1);  
+}  
+  
+/* Checkmark 內部的點 (像個小腳印) */  
+.checkmark::after {  
+content: "";  
+position: absolute;  
+display: none;  
+}  
+  
+.option-item input:checked ~ .checkmark::after {  
+display: block;  
+}  
+  
+.option-item .checkmark::after {  
+left: 6px;  
+top: 6px;  
+width: 8px;  
+height: 8px;  
+border-radius: 50%;  
+background: white;  
+}  
+  
+/* 輸入框樣式 */  
+input[type="text"] {  
+width: 100%;  
+padding: 15px 20px;  
+border: 2px solid #f0f0f0;  
+border-radius: 20px;  
+box-sizing: border-box;  
+font-size: 1rem;  
+font-weight: 300;  
+transition: 0.2s;  
+color: var(--text-black-light);  
+}  
+  
+input[type="text"]:focus {  
+outline: none;  
+border-color: var(--accent-green);  
+background-color: #fdfdfd;  
+}  
+  
+/* 提交按鈕 */  
+button {  
+width: 100%;  
+padding: 18px;  
+background-color: var(--accent-green);  
+color: white;  
+border: none;  
+border-radius: 30px;  
+font-size: 1.2rem;  
+font-weight: 700;  
+cursor: pointer;  
+transition: all 0.3s ease;  
+margin-top: 25px;  
+box-shadow: 0 5px 15px rgba(174, 213, 129, 0.4);  
+letter-spacing: 2px;  
+}  
+  
+button:hover {  
+background-color: var(--hover-green);  
+transform: translateY(-3px);  
+box-shadow: 0 8px 20px rgba(174, 213, 129, 0.5);  
+}  
+  
+footer {  
+text-align: center;  
+margin-top: 40px;  
+font-size: 0.85rem;  
+color: #bbb;  
+font-weight: 300;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<div class="container">  
+<header>  
+<h1>Carry home 選品大調查   
+![72.png](Attachments/4B70ABDB-BD7C-40F3-8031-ED732BE93548.png)  
+</h1>  
+<p class="intro">謝謝你支持 Carry home！  
+![72.png](Attachments/3683E710-4669-4F8B-8999-CA8D865A71D3.png)  
+<br>我們想更了解你的喜好，讓你最愛的小東西都能輕鬆帶回家。</p>  
+</header>  
+  
+<form action="++[https://formspree.io/f/mqakezql](https://formspree.io/f/mqakezql)++" method="POST" id="surveyForm">  
+  
+<div class="question-group">  
+<label class="question-title">1-1. 平時最常關注的主題類別？</label>  
+<span class="hint">(多選，最多選3個)</span>  
+<div class="options">  
+<label class="option-item"><input type="checkbox" name="主題類別" value="玩具總動員"><span class="checkmark"></span>玩具總動員</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="湯姆貓與傑利鼠"><span class="checkmark"></span>湯姆貓與傑利鼠</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="史努比"><span class="checkmark"></span>史努比</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="麵包超人"><span class="checkmark"></span>麵包超人</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="蠟筆小新"><span class="checkmark"></span>蠟筆小新</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="海綿寶寶"><span class="checkmark"></span>海綿寶寶</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="小小兵"><span class="checkmark"></span>小小兵</label>  
+<label class="option-item"><input type="checkbox" name="主題類別" value="其他"><span class="checkmark"></span>其他</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">1-2. 通常吸引你下單的原因？</label>  
+<span class="hint">(多選，最多選2個)</span>  
+<div class="options">  
+<label class="option-item"><input type="checkbox" name="下單原因" value="視覺好看"><span class="checkmark"></span>視覺好看</label>  
+<label class="option-item"><input type="checkbox" name="下單原因" value="實用性高"><span class="checkmark"></span>實用性高</label>  
+<label class="option-item"><input type="checkbox" name="下單原因" value="價格親民"><span class="checkmark"></span>價格親民</label>  
+<label class="option-item"><input type="checkbox" name="下單原因" value="台灣買不到"><span class="checkmark"></span>台灣買不到</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">2-1. 你最偏好的風格？</label>  
+<div class="options">  
+<label class="option-item"><input type="radio" name="偏好風格" value="生活實用型" required><span class="checkmark"></span>生活實用型</label>  
+<label class="option-item"><input type="radio" name="偏好風格" value="擺飾可愛型"><span class="checkmark"></span>擺飾可愛型</label>  
+<label class="option-item"><input type="radio" name="偏好風格" value="其他"><span class="checkmark"></span>其他</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">2-2. 最近想找什麼樣的商品？</label>  
+<input type="text" name="許願商品" placeholder="例如：手機殼、收納盒...">  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">3. 對於「Carry home 小物」的預算範圍？</label>  
+<div class="options">  
+<label class="option-item"><input type="radio" name="預算範圍" value="100-300" required><span class="checkmark"></span>100-300</label>  
+<label class="option-item"><input type="radio" name="預算範圍" value="300-600"><span class="checkmark"></span>300-600</label>  
+<label class="option-item"><input type="radio" name="預算範圍" value="600-1000"><span class="checkmark"></span>600-1000</label>  
+<label class="option-item"><input type="radio" name="預算範圍" value="1000以上"><span class="checkmark"></span>1000以上</label>  
+</div>  
+</div>  
+  
+<div class="question-group">  
+<label class="question-title">4. 是否希望在限動舉辦「二選一」投票？</label>  
+<div class="options">  
+<  
